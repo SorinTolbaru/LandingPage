@@ -1,1 +1,31 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+nav, #social-media {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul, #social-media ul {
+  display: flex;
+  gap: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+}
