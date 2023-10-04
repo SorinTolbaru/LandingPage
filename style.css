@@ -1,20 +1,92 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
-footer {
+@font-face {
+  font-family: Adrenaline;
+  src: url(imgs/fonts/ADRENALINE.otf);
+}
+.logo {
+  font-family: Adrenaline;
+  font-size: 50px;
+  color: red;
+}
+
+svg {
+  cursor: pointer;
+}
+svg path {
+  fill: white !important;
+  transition: 1s fill;
+}
+svg:hover path {
+  fill: red !important;
+}
+
+body {
+  height: 100vh;
+  padding: 0% 5%;
+  color: white;
+  box-sizing: border-box;
+  background: linear-gradient(360deg, #1C1C1C 10%, #494949 360%);
+}
+
+h1 {
+  color: red;
+}
+
+main {
+  display: none;
+  height: 80vh;
+}
+main .home-description {
+  width: 40%;
+  gap: 10px;
+}
+main .home-description button {
+  width: 40%;
+  cursor: pointer;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 1%;
+  border: none;
+}
+main .home-product {
+  width: 60%;
+}
+main .home-product img {
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+.home-buy-promotion {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.home-promotion {
+  font-weight: bold;
+  color: red;
+}
+
+section {
+  height: 100%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 nav, #social-media {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 10vh;
 }
 nav ul, #social-media ul {
   display: flex;
-  gap: 10px;
+  gap: 20px;
 }
 
 li {
@@ -27,5 +99,25 @@ ul {
 }
 
 li a {
+  height: -moz-max-content;
+  height: max-content;
   text-decoration: none;
+  color: black;
+  transition: color 1s;
+  color: white;
+  font-weight: bold;
+}
+li a:hover {
+  color: red;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 10vh;
+}
+
+.active {
+  display: flex;
 }
